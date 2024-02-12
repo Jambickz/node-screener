@@ -13,7 +13,7 @@ module.exports = async (symbols, client) => {
   try {
     for (let i = 0; i < symbols.length; i++) {
       try {
-        console.log(i + ' ' + symbols[i])
+        // console.log(i + ' ' + symbols[i])
         const ohlcFirstInterval = await client.futuresCandles({
           symbol: symbols[i],
           interval: FIRST_INTERVAL,

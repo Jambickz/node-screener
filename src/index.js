@@ -37,10 +37,10 @@ module.exports = async () => {
   try {
     const client = await new Binance()
     client.time().then(time => {
-      console.log(`Connected to Binance. Time: ${time}`)
+      console.error(`Connected to Binance. Time: ${time}`)
       // TelegramBot.sendMessage(`Connected to Binance. Time: ${new Date(time)}`, chatId)
     }).catch(e => {
-      console.log(`Error connecting to Binance: ${e}`)
+      console.error(`Error connecting to Binance: ${e}`)
       TelegramBot.sendMessage(`Error connecting to Binance: ${e}`, chatId)
     })
     const symbols = await fetchSymbols(client)

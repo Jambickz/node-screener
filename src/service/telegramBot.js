@@ -21,7 +21,11 @@ class MyTelegramBot {
   }
 
   sendMessage (message, chatId) {
-    this.bot.sendMessage(chatId || process.env.TELEGRAM_CHAT_ID, message, this.opts)
+    return this.bot.sendMessage(chatId || process.env.TELEGRAM_CHAT_ID, message, this.opts)
+  }
+
+  pinMessage (chatId, messageId) {
+    return this.bot.pinChatMessage(chatId, messageId)
   }
 }
 

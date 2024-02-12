@@ -4,6 +4,7 @@ const fetchSymbols = require('./tools/fetchSymbols')
 const processSignals = require('./service/processSignals')
 const TimeCaller = require('./tools/timeCaller')
 
+// eslint-disable-next-line no-unused-vars
 const testSymbols = [
   'XTZUSDT', 'ZENUSDT', 'EOSUSDT', 'STPTUSDT',
   'MINAUSDT', 'BNXUSDT', 'ORDIUSDT', 'GLMRUSDT',

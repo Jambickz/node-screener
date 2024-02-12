@@ -1,0 +1,29 @@
+{
+  "name": "screener",
+  "version": "1.0.0",
+  "description": "screener in trandingView",
+  "main": "index.js",
+  "scripts": {
+    "start": "dotenv -e .env.production node index.js",
+    "dev": "dotenv -e .env.development nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jambo",
+  "license": "ISC",
+  "dependencies": {
+    "binance-api-node": "^0.12.7",
+    "dotenv": "^16.3.1",
+    "node-schedule": "^2.1.1",
+    "node-telegram-bot-api": "^0.63.0",
+    "talib-stream": "^0.2.21"
+  },
+  "devDependencies": {
+    "eslint": "^8.46.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^3.0.1"
+  }
+}
